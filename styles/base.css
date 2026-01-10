@@ -10,9 +10,7 @@
 }
 
 body {
-    display: grid;
-    height: 100vh;
-    grid-template: auto 1fr auto / auto;
+
     margin: 0;
 }
 
@@ -20,17 +18,14 @@ header {
     display: block;
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    justify-content: space-around;
+    text-align: center;
     font-size: 36px;
 }
 
 
 
 header nav {
-    font-size: ;
+    font-size: 24px;
     background-color: #5F9DF7;
     padding: 0px;
     display: flex;
@@ -44,18 +39,57 @@ header nav a {
     padding: 1em;
 }
 
+header nav a {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
 nav a:hover {
     background-color: #f3f3f3;
     color: var(--primary-color);
 }
 
-.card {
+main {
+    width: 80%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+section {
+    justify-content: center;
+}
+
+section h2 {
+    background-color: var(--primary-color);
 
 }
 
 footer {
     background-color: var(--primary-color);
+    color: black;
     padding: 2rem;
     text-align: center;
     grid-column: 1 / 4;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+
+}
+
+.card img {
+    width: auto;
+    height: 200px;
+    float: right;
+    margin-left: 20px;
+
 }
