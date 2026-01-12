@@ -62,19 +62,24 @@ main h1 {
     text-align: center;
 }
 
-main ul {
+main ul a {
     display: flex;
     flex-direction: column;
     padding: 1px;
     margin-bottom: 10px;
+    list-style-type: circle;
 
 }
 
-section {}
+section {
+    border: 2px solid black;
+    border-radius: 15px 15px 15px 15px;
+}
 
 section h2 {
     background-color: var(--primary-color);
     border-radius: 15px 15px 0px 0px;
+    margin: 0;
 
 }
 
@@ -89,7 +94,7 @@ footer {
     display: grid;
     min-width: 0;
     min-height: 0;
-    justify-content: center;
+    justify-content: right;
 
 }
 
