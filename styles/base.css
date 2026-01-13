@@ -17,7 +17,7 @@ body {
 header {
     display: block;
     background-color: var(--primary-color);
-    color: var(--accent2-color);
+    color: var(--bkcolor);
     text-align: center;
     font-size: 36px;
 }
@@ -34,12 +34,9 @@ header nav {
 }
 
 header nav a {
-    color: #f3f3f3;
+    color: #000;
     text-decoration: none;
     padding: 1em;
-}
-
-header nav a {
     display: flex;
     justify-content: space-evenly;
 
