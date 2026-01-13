@@ -1,4 +1,6 @@
 
-const currentyear = new Date().getFullYear();
+const year = new Date().getFullYear();
 
-document.getElementById('year').textContent = currentyear;
+document.getElementById('currentyear').textContent = year;
+
+document.getElementById("lastModified").innerHTML = document.lastModified;
