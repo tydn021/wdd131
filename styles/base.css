@@ -93,15 +93,9 @@ footer {
     min-height: 0;
 }
 
-.about {
-    grid-column: 1 / 2;
-    display: grid;
-    grid-template-columns: 2fr 100%;
-}
+.about {}
 
-.webdev {
-    grid-column-start: auto;
-}
+.webdev {}
 
 .profile {
     width: auto;
