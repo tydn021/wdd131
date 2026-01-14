@@ -59,7 +59,7 @@ main h1 {
     text-align: center;
 }
 
-main ul a {
+main a {
     display: flex;
     flex-direction: column;
     padding: 1px;
@@ -88,11 +88,19 @@ footer {
 }
 
 .card {
-    display: grid;
+
     min-width: 0;
     min-height: 0;
-    justify-content: right;
+}
 
+.about {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 2fr 100%;
+}
+
+.webdev {
+    grid-column-start: auto;
 }
 
 .profile {
