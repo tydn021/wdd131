@@ -124,7 +124,7 @@ footer {
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1fr;
+    gap: 1px;
 
 
 
@@ -152,7 +152,7 @@ footer {
 
 .webdev {
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
 }
 
 .webdev div {
