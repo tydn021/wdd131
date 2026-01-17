@@ -35,9 +35,17 @@
     .navigation {
         flex-direction: row;
     }
-    
+
     .navigation a {
         display: block;
         flex: 1 1 100%;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
     }
 }
