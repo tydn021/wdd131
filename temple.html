@@ -7,25 +7,67 @@
     <meta name="description" content="Tyler's website for WDD 131, and I am excited to be in this class!">
     <meta name="author" content="Tyler Nelson">
     <title>WDD 131 – Dynamic Web Fundamentals – Tyler Nelson</title>
-    <link rel="stylesheet" href="styles/temple.css">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <header>
-        
+        <h1>Temple Album</h1>
+        <button id="menu">☰</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="">Home</a></li>
+                <li><a href="">Old</a></li>
+                <li><a href="">New</a></li>
+                <li><a href="">Large</a></li>
+                <li><a href="">Small</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-
+        <h1>Home</h1>
+        <figure>
+            <figcaption></figcaption><img src="images/spokane-temple-lds.jpg" alt="Spokane Temple">
+            <figcaption>Spokane, Washington Temple</figcaption>
+        </figure>
+        <figure><img src="images/accra-ghana-temple.jpg" alt="Ghana Temple">
+            <figcaption>Accra, Ghana Temple</figcaption>
+        </figure>
+        <figure><img src="images/bern-switzerland-temple.jpg" alt="Switzerland Temple">
+            <figcaption>Bern, Switzerland Temple</figcaption>
+        </figure>
+        <figure><img src="images/tokyo_japan_temple.jpg" alt="Tokyo Temple">
+            <figcaption></figcaption>Tokyo, Japan Temple
+        </figure>
+        <figure><img src="images/montona-temple.jpg" alt="Montana Temple">
+            <figcaption>Billings, Montana Temple</figcaption>
+        </figure>
+        <figure><img src="images/toronto-temple.jpg" alt="Toronto Temple">
+            <figcaption>Toronto, Canada Temple</figcaption>
+        </figure>
+        <figure><img src="images/brisbane-australia-temple.jpg" alt="">
+            <figcaption>Brisbane, Australia Temple</figcaption>
+        </figure>
+        <figure><img src="images/bountiful-utah-temple.jpg" alt="">
+            <figcaption>Bountiful, Utah Temple</figcaption>
+        </figure>
+        <figure><img src="images/boise-idaho-temple.jpg" alt="">
+            <figcaption>Boise, Idaho Temple</figcaption>
+        </figure>
     </main>
 
     <footer>
-
+        <p>&COPY;<span id="currentyear"></span>, Tyler Nelson, Washington USA</p>
+        <p><span id="lastModified"></span></p>
     </footer>
 
 </body>

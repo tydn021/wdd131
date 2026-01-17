@@ -5,7 +5,7 @@
     --accent2-color: #1746A2;
     --bkcolor: #180b5b;
     --bkcolor-transparent: rgba(32, 12, 128, 0.424);
-    --heading-font: "Roboto", sans-serif;
+    --heading-font: "Merriweather", sans-serif;
     --body-font: "Roboto", sans-serif;
 }
 
@@ -25,6 +25,7 @@ body {
 }
 
 header {
+    font-family: var(--heading-font);
     display: block;
     background-color: var(--primary-color);
     color: var(--bkcolor);
@@ -124,11 +125,7 @@ footer {
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1px;
-
-
-
-
+    gap: 0;
 }
 
 .about h2 {
