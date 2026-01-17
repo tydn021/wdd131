@@ -112,7 +112,6 @@ footer {
 #menu::before {
     content: "☰";
     font-size: 36px;
-    background-color: none;
 }
 
 #menu.open::before {
