@@ -53,4 +53,12 @@
         grid-row: 6 / 8;
         background-color: var(--bkcolor-transparent);
     }
+
+    .left ul {
+        color: var(--secondary-color);
+    }
+
+    .right ul {
+        color: var(--secondary-color);
+    }
 }
