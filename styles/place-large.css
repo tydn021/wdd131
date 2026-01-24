@@ -5,10 +5,16 @@
         --accent1-color: #EA4C4C;
         --accent2-color: #703B3B;
         --bkcolor: #180b5b;
-        --bkcolor-transparent: rgba(250, 244, 208, .7);
+        --bkcolor-transparent: rgba(250, 244, 208, .9);
         --heading-font: "Merriweather", sans-serif;
         --body-font: "Lato";
     }
+
+    *,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
 
     header,
     main,
@@ -32,6 +38,7 @@
     }
 
     section h2 {
+        border-radius: 15px;
         color: #fff;
         background-color: var(--accent2-color);
     }
