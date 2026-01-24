@@ -39,7 +39,6 @@ main {
 }
 
 section {
-    border: 1px solid var(--secondary-color);
     width: 500px;
 }
 
@@ -49,6 +48,10 @@ section h2 {
     margin: 30px;
 }
 
+section ul {
+    justify-self: center;
+    font-size: 24px;
+}
 
 footer {
     background-color: var(--primary-color);

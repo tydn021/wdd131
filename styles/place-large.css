@@ -1,29 +1,56 @@
-@media screen and (min-width: 740px){
-    
+@media screen and (min-width: 740px) {
+    :root {
+        --primary-color: #FAF4D0;
+        --secondary-color: #C14545;
+        --accent1-color: #EA4C4C;
+        --accent2-color: #703B3B;
+        --bkcolor: #180b5b;
+        --bkcolor-transparent: rgba(250, 244, 208, .7);
+        --heading-font: "Merriweather", sans-serif;
+        --body-font: "Lato";
+    }
+
+    header,
+    main,
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 100%;
+    }
+
     main {
         display: grid;
-        grid-template-columns:;
-        height: 400px;
-        width: 100%;
-        place-items: center;
-        position: relative;
+        grid-template-columns: repeat(12, minmax(50px, 1fr));
     }
-     
-    .hero {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
 
-    }
-    .hero img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        grid-area: 1 / 1;
-    }
     section {
-        
+        border: 1px solid var(--secondary-color);
+        border-radius: 15px;
     }
-} 
+
+    section h2 {
+        color: #fff;
+        background-color: var(--accent2-color);
+    }
+
+    .hero {
+        grid-column: 1 / -1;
+        grid-row: 1 / 9;
+    }
+
+
+    .left {
+        grid-column: 2 / 5;
+        grid-row: 2 / 6;
+        background-color: var(--bkcolor-transparent);
+    }
+
+    .right {
+        grid-column: 8 / 12;
+        grid-row: 6 / 8;
+        background-color: var(--bkcolor-transparent);
+    }
+}

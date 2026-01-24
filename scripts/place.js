@@ -14,5 +14,5 @@ let result = calculateWindChill(tempF , speedMPH);
 
 let formattedResult = typeof result === 'number' ? result.toFixed(1) + "°F": result;
 
-document.getElementById('windChill').innerText = "Wind Chill: " + formattedResult; 
+document.getElementById('windChill').innerHTML = "Wind Chill: " + formattedResult; 
 
