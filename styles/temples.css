@@ -27,7 +27,7 @@ body {
 }
 
 header {
-    font-family: var(--heading-font)
+    font-family: var(--heading-font);
     display: grid;
     grid-gap: 1rem;
     background-color: var(--primary-color);

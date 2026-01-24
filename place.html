@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tyler's website for WDD 131, and I am excited to be in this class!">
+    <meta name="author" content="Tyler Nelson">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+    <title>WDD 131 – Dynamic Web Fundamentals – Tyler Nelson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Carmel By The Sea</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large-carmel.webp">
+                <source media="(min-width: 550)" srcset="">
+                <img src="images/hero-small-carmel.webp" alt="">
+            </picture>
+        </div>
+        <section>
+            <h2>Data</h2>
+            <ul>
+                <li><b>Area:</b> About 2.75 sq km</li>
+                <li><b>Population:</b> Around 3,124 - 3,186</li>
+                <li><b>US State:</b> California</li>
+                <li><b>Languages:</b> English, Spanish, Italian</li>
+                <li><b>Currency:</b> US Dollar</li>
+                <li><b>Timezone:</b> </li>
+                <li><b>Calling Code:</b></li>
+                <li><b>Internet TLD:</b></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Weather</h2>
+            <ul>
+                <li><b>Temperature:</b> 54°F</li>
+                <li><b>Conditions:</b> Mostly Cloudy</li>
+                <li><b>Wind Speeds:</b> 5 mph </li>
+                <li ID="windChill"></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&COPY;<span id="currentyear"></span>, Tyler Nelson, Washington USA</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

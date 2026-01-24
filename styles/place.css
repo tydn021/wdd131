@@ -1,0 +1,62 @@
+:root {
+    --primary-color: #FAF4D0;
+    --secondary-color: #C14545;
+    --accent1-color: #EA4C4C;
+    --accent2-color: #703B3B;
+    --bkcolor: #180b5b;
+    --bkcolor-transparent: rgba(32, 12, 128, 0.424);
+    --heading-font: "Merriweather", sans-serif;
+    --body-font: "Lato";
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+header {
+    font-family: var(--heading-font);
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    font-size: 32px;
+}
+
+header h1 {
+    margin: 20px;
+    padding: 40px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    justify-content: center;
+    gap: 1em;
+    font-family: var(--body-font);
+}
+
+section {
+    border: 1px solid var(--secondary-color);
+    width: 500px;
+}
+
+section h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    font-size: 26px;
+    padding: 2rem;
+    text-align: center;
+    margin-top:3rem;
+}
+
