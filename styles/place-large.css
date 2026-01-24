@@ -55,10 +55,10 @@
     }
 
     .left ul {
-        color: var(--secondary-color);
+        color: var(--accent2-color);
     }
 
     .right ul {
-        color: var(--secondary-color);
+        color: var(--accent2-color);
     }
 }
