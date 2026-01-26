@@ -10,12 +10,6 @@
         --body-font: "Lato";
     }
 
-    *,
-    *::after,
-    *::before {
-        box-sizing: border-box;
-    }
-
     header,
     main,
     footer {
