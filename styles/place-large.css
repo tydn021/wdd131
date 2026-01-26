@@ -1,8 +1,8 @@
 @media screen and (min-width: 740px) {
     :root {
-        --primary-color: #FAF4D0;
+        --primary-color: hsl(51, 81%, 90%);
         --secondary-color: #C14545;
-        --accent1-color: #EA4C4C;
+        --accent1-color: hsl(0, 79%, 61%);
         --accent2-color: #703B3B;
         --bkcolor: #180b5b;
         --bkcolor-transparent: rgba(250, 244, 208, .9);
@@ -11,20 +11,16 @@
     }
 
     *,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
+    *::after,
+    *::before {
+        box-sizing: border-box;
+    }
 
     header,
     main,
     footer {
         max-width: 1200px;
         margin: 0 auto;
-    }
-
-    img {
-        width: 100%;
     }
 
     main {
@@ -61,11 +57,11 @@
         background-color: var(--bkcolor-transparent);
     }
 
-    .left ul {
+    .left .right ul {
         color: var(--accent2-color);
     }
 
-    .right ul {
+    /* .right ul {
         color: var(--accent2-color);
-    }
+    } */
 }
