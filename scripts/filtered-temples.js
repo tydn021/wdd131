@@ -66,6 +66,30 @@ const temples = [
 		imageUrl:
 			"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
 	},
+	{
+		templeName: "Sapporo Japan Temple",
+		location: "Atsubetsu-ku Sapporo, Hokkaido, Japan",
+		dedicated: "2016, August, 21",
+		area: 48480,
+		imageUrl:
+			"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/800x500/sapporo-japan-exterior-night-1945721.jpg"
+	},
+	{
+		templeName: "Spokane Washington Temple",
+		location: "Spokane, Washington, United States",
+		dedicated: "1999, August, 21",
+		area: 10700,
+		imageUrl:
+			"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/spokane-washington/800x500/spokane-temple-lds-860233-wallpaper.jpg"
+	},
+	{
+		templeName: "Cardston Alberta Temple",
+		location: "Cardston, Alberta, Canada",
+		dedicated: "1923, August, 26",
+		area: 88562,
+		imageUrl:
+			"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cardston-alberta/800x500/cardston-alberta-temple-lds-680533-wallpaper.jpg"
+	},
 	// Add more temple objects here...
 ];
 
