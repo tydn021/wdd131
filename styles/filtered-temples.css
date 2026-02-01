@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #213C51;
+    --secondary-color: #6594B1;
+    --accent1-color: #DDAED3;
+    --accent2-color: #EEEEEE;
+    --bkcolor: #180b5b;
+    --bkcolor-transparent: rgba(32, 12, 128, 0.424);
+    --heading-font: "Merriweather";
+    --body-font: "Roboto", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: var(--body-font);
+    margin: 0;
+}
+
+header {
+    font-family: var(--heading-font);
+    display: grid;
+    grid-gap: 1rem;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+header h1 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+}
+
+header,
+main {
+    margin: 0 auto;
+}
+
+nav ul {
+
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    color: #DDAED3;
+    text-align: center;
+
+
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+main {
+    max-width: 800px;
+}
+
+main,
+h1 {
+    margin-top: 40px;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+main,
+figcaption {
+    text-align: center;
+    margin-top: 4px;
+}
+
+main img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-size: 32px;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#menu::before {
+    content: "";
+    font-size: 36px;
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+
+
+}
+
+.navigation li {
+    display: none;
+}
+
+.open li {
+    display: block;
+}
+
+.res-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+     grid-template-rows: 1fr;
+    gap: 30px;
+}
