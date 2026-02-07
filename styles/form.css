@@ -126,7 +126,6 @@ label {
 .check {
     display: flex;
     align-items: center;
-    margin: 3px;
     gap: 10px;
     margin: 5px 0;
 }
