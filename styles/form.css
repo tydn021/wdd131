@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #FF7F11;
+    --secondary-color: #ACBFA4;
+    --accent1-color: #E2E8CE;
+    --accent2-color: #3E515A;
+    --bkcolor: #262626;
+    --bkcolor-transparent: rgba(32, 12, 128, 0.424);
+    --heading-font: "Inter";
+    --body-font: "Roboto", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    justify-items: center;
+    font-family: var(--body-font);
+}
+
+main {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: var(--accent1-color);
+}
+
+header, footer {
+    width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 400px;
+    color: var(--bkcolor);
+    background-color: var(--primary-color);
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+fieldset {
+    padding: 0;
+    border: none;
+    display: block;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    width: 100%;
+    max-height: 300px;
+    height: 150px;
+}
+
+.proform input[type="text"],
+.proform input[type="tel"],
+.proform input[type="email"],
+.proform input[type="url"],
+.proform input[type="date"],
+.proform select,
+.proform input[type="numbers"],
+.proform textarea{
+    display:block;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .75rem;
+    background-color: #eee;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+
+
+.features {
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.proform input[type="submit"] {
+    display:block;
+    font-size: 24px;
+    border: none;
+    font-family: var(--heading-font);
+    background-color: var(--bkcolor);
+    color: var(--primary-color);
+    border-radius: 8px;
+    width: 96%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    justify-self: center;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.starlayout {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.stars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    margin: 3px;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.check label, .stars label {
+    display: inline;
+    margin: 0;
+}
+
+.optional::after {
+    content: "(optional)";
+    font-size: .8rem;
+    padding: 5px;
+    color: var(--accent2-color);
+}

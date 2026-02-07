@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="proform">
+            <label for="product">Product</label>
+            <select name="product" id="product" required>
+                <option value="" disabled selected>Select a Product....</option>
+            </select>
+
+            <fieldset class="starlayout">
+                <legend>Overall Rating</legend>
+                
+                    <div class="stars"><label for="star1">&star;</label>
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                    </div>
+
+                    <div class="stars"><label for="star2">&star; &star; </label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                    </div>
+                    <div class="stars"><label for="star3">&star; &star; &star;</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                    </div>
+
+                    <div class="stars"><label for="star4">&star; &star; &star; &star;</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                    </div>
+
+                    <div class="stars"><label for="star5">&star; &star; &star; &star; &star;</label>
+                    <input type="radio" id="star5" name="rating" value="5"></div>
+            </fieldset>
+
+            <label for="date">Date of Installation</label>
+            <input type="date" name="installDate" id="date" required>
+
+
+            <fieldset class="features">
+                <legend>Useful Features</legend>
+
+                <div class="check"><label for="durability">Durability</label>
+                <input type="checkbox" id="durability" name="features" value="durability"></div>
+                <div class="check"><label for="ease">Ease of Use</label>
+                <input type="checkbox" id="ease" name="features" value="ease"></div>
+                <div class="check"><label for="perform">Performance</label>
+                <input type="checkbox" id="perform" name="features" value="perform"></div>
+                <div class="check"><label for="design">Design</label>
+                <input type="checkbox" id="design" name="features" value="design"></div>
+            </fieldset>
+
+            <fieldset>
+                <label for="written" class="optional">Written Review</label>
+                <textarea name="written" id="written"></textarea>
+            </fieldset>
+
+            <label for="name" class="optional">Your Name</label>
+            <input type="text" id="name" name="name">
+
+            <input type="submit" name="post" id="post" value="Post Review">
+
+        </form>
+    </main>
+    <footer>
+        <p>&COPY;<span id="currentyear"></span>, Tyler Nelson, Washington USA</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
