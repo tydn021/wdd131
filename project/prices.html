@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="RoseBriar Spindle is a quilting business founded by Debbra Nelson. She quilts the most beautiful quilts imaginable, and her prices are fair!">
+    <meta name="author" content="Tyler Nelson">
+    <title>RoseBriar Spindle</title>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/price.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rochester&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>RoseBriar Spindle</h1>
+        <button id="menu"><span class="smallmode">Menu</span></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="prices.html">Prices</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="price">
+        <h1>Pricing</h1>
+        <section>
+            <h2>Get your Estimate!</h2>
+            <fieldset>
+                <legend>Choose your Type of Quilting Pattern!</legend>
+
+                <div class="quiltPrice"><label for="stipple">Stipple (.018¢)</label>
+                    <input type="radio" name="quiltPrice" id="stipple" value="0.018" required>
+                </div>
+
+                <div class="quiltPrice"><label for="allover1">All Over (.020¢)</label>
+                    <input type="radio" name="quiltPrice" id="allover1" value="0.020" required>
+                </div>
+
+                <div class="quiltPrice"><label for="allover2">All Over (.026¢)</label>
+                    <input type="radio" name="quiltPrice" id="allover2" value="0.026" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="length"><label for="width">Your Width!</label>
+                <input type="text" name="width" id="width" required></div>
+                 <div class="length"><label for="height">Your Height!</label>
+                <input type="text" name="height" id="height" required> </div>
+                <input type="submit" value="See Your Price!" onclick="getQuiltPrice(); return false;">
+            </fieldset>
+            <p>Your estimated price is: $<span id="userPrice">0.00</span></p>
+        </section>
+        <section>
+            <h2>Price Table</h2>
+            <div class="tablescroll"><table class="pricetable">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Type</th>
+                        <th rowspan="2">Cents per sq. inch</th>
+                        <th rowspan="2">Description</th>
+                        <th colspan="6">SAMPLE MACHINE QUILTING PRICING</th>
+                    </tr>
+                    <tr>
+                        <th>Crib 45x45</th>
+                        <th>Lap 52x60</th>
+                        <th>Twin 75x98</th>
+                        <th>Full 83x106</th>
+                        <th>Queen 90x106</th>
+                        <th>King 107x115</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Stipple</td>
+                        <td>$.018</td>
+                        <td>Stipple or Meander - We have other patterns in this price level too!</td>
+                        <td>$55.00</td>
+                        <td>$55.00</td>
+                        <td>$124.95</td>
+                        <td>$158.37</td>
+                        <td>$162.18</td>
+                        <td>$209.19</td>
+                    </tr>
+                    <tr>
+                        <td>All Over</td>
+                        <td>$.020 to $.036</td>
+                        <td>Pattern over the entire surface of the quilt, including the border. Price varies according
+                            to
+                            the density of the quilt.</td>
+                        <td>$55.00</td>
+                        <td>$68.64</td>
+                        <td>$161.70</td>
+                        <td>$202.86</td>
+                        <td>$209.88</td>
+                        <td>$270.71</td>
+                    </tr>
+                    <tr>
+                        <td>All Over with Borders</td>
+                        <td>$.026</td>
+                        <td>One pattern quilted overall in the center of the quilt</td>
+                        <td>$55.00</td>
+                        <td>$81.12</td>
+                        <td>$191.10</td>
+                        <td>$228.75</td>
+                        <td>$248.04</td>
+                        <td>$319.93</td>
+                    </tr>
+                </tbody>
+            </table></div>
+        </section>
+    </main>
+    <footer>
+              <a href="https://www.facebook.com/people/Rosebriar-Spindle-Vendibles/100049820156150/"><img src="images/facebook.svg" alt="facebook-logo"></a>
+        <p>&COPY;<span id="currentyear"></span>, Tyler Nelson, Washington USA</p>
+        <p><span id="lastModified"></span></p>
+        <p>You've visited RoseBriar Spindle this many times: <span id="timesVisited"></span></p>
+    </footer>
+</body>
+
+</html>
