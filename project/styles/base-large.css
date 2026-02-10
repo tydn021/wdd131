@@ -14,6 +14,10 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    header h1 {
+        margin-left: 50px;
+    }
     nav ul {
         justify-content: flex-end;
         flex-direction: row;
@@ -83,7 +87,6 @@
         grid-template-columns: 1fr 2fr;
         justify-content: center;
         gap: 20px;
-        max-width: none;
     }
 
     .price h1 {
