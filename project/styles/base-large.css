@@ -18,6 +18,7 @@
     header h1 {
         margin-left: 50px;
     }
+
     nav ul {
         justify-content: flex-end;
         flex-direction: row;
@@ -62,13 +63,12 @@
         display: none;
     }
 
-    .home {
+    .home,
+    .price {
         display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: auto auto;
         justify-content: center;
         gap: 20px;
-        max-width: none;
     }
 
     .home h1 {
@@ -79,14 +79,6 @@
     .home section {
         max-width: 700px;
         width: 100%;
-    }
-
-    .price {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr 2fr;
-        justify-content: center;
-        gap: 20px;
     }
 
     .price h1 {
